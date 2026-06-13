@@ -9,7 +9,15 @@ The main app lets users pick two countries and see:
 - a scoreline probability heatmap;
 - a score probability table.
 
-## Run the App
+## Web App
+
+Use the hosted app here:
+
+<https://itscominghome.streamlit.app/>
+
+## Local
+
+Run the app locally:
 
 ```bash
 uv sync
