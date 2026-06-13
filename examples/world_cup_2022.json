@@ -1,0 +1,51 @@
+{
+  "name": "FIFA World Cup 2022",
+  "tournament": "FIFA World Cup",
+  "groups": {
+    "A": ["Qatar", "Ecuador", "Senegal", "Netherlands"],
+    "B": ["England", "Iran", "United States", "Wales"],
+    "C": ["Argentina", "Saudi Arabia", "Mexico", "Poland"],
+    "D": ["France", "Australia", "Denmark", "Tunisia"],
+    "E": ["Spain", "Costa Rica", "Germany", "Japan"],
+    "F": ["Belgium", "Canada", "Morocco", "Croatia"],
+    "G": ["Brazil", "Serbia", "Switzerland", "Cameroon"],
+    "H": ["Portugal", "Ghana", "Uruguay", "South Korea"]
+  },
+  "knockout": [
+    {
+      "round": "round_of_16",
+      "matches": [
+        {"slot": "R16_1", "home": "A1", "away": "B2"},
+        {"slot": "R16_2", "home": "C1", "away": "D2"},
+        {"slot": "R16_3", "home": "E1", "away": "F2"},
+        {"slot": "R16_4", "home": "G1", "away": "H2"},
+        {"slot": "R16_5", "home": "B1", "away": "A2"},
+        {"slot": "R16_6", "home": "D1", "away": "C2"},
+        {"slot": "R16_7", "home": "F1", "away": "E2"},
+        {"slot": "R16_8", "home": "H1", "away": "G2"}
+      ]
+    },
+    {
+      "round": "quarterfinal",
+      "matches": [
+        {"slot": "QF_1", "home": "R16_1", "away": "R16_2"},
+        {"slot": "QF_2", "home": "R16_3", "away": "R16_4"},
+        {"slot": "QF_3", "home": "R16_5", "away": "R16_6"},
+        {"slot": "QF_4", "home": "R16_7", "away": "R16_8"}
+      ]
+    },
+    {
+      "round": "semifinal",
+      "matches": [
+        {"slot": "SF_1", "home": "QF_1", "away": "QF_2"},
+        {"slot": "SF_2", "home": "QF_3", "away": "QF_4"}
+      ]
+    },
+    {
+      "round": "final",
+      "matches": [
+        {"slot": "F_1", "home": "SF_1", "away": "SF_2"}
+      ]
+    }
+  ]
+}
